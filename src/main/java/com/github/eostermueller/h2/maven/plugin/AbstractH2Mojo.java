@@ -71,6 +71,15 @@ public abstract class AbstractH2Mojo extends AbstractMojo {
   private List<Service> services;
 
   /**
+   * Whether web console should be launched.  See <a
+   * href="http://www.h2database.com/javadoc/org/h2/tools/Server.html#main_String...">the
+   * documentation for the {@code Server} class</a> for more details.
+   * 
+   * @parameter expression="${h2.web}" property="web"
+   */
+  private boolean web;
+  
+  /**
    * Whether SSL should be used.  See <a
    * href="http://www.h2database.com/javadoc/org/h2/tools/Server.html#main_String...">the
    * documentation for the {@code Server} class</a> for more details.
@@ -780,6 +789,11 @@ public abstract class AbstractH2Mojo extends AbstractMojo {
           if (ssl) {
             args.add(new StringBuilder("-").append(id).append("SSL").toString());
           }
+
+//          final boolean web = service.getWeb();
+//          if (web) {
+//            args.add(new StringBuilder("-").append(id).append("web").toString());
+//          }
 
           serviceCount++;
         }

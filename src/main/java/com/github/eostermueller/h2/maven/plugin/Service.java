@@ -225,6 +225,13 @@ public final class Service implements Serializable {
   public void setSSL(final boolean ssl) {
     this.ssl = ssl;
   }
+//  public boolean getWeb() {
+//	    return this.web;
+//	  }
+//
+//	  public void setWeb(final boolean web) {
+//	    this.web = web;
+//	  }
 
   @Override
   public int hashCode() {

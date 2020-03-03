@@ -23,7 +23,7 @@ Usage
 
 +---+
   <plugin>
-    <groupId>com.edugility</groupId>
+    <groupId>com.github.eostermueller</groupId>
     <artifactId>jpa-maven-plugin</artifactId>
     <version>${projectVersion}</version>
     <!-- ...more to come. -->
@@ -48,7 +48,7 @@ Usage
 
 +---
    <plugin>
-     <groupId>com.edugility</groupId>
+     <groupId>com.github.eostermueller</groupId>
      <artifactId>jpa-maven-plugin</artifactId>
      <version>${projectVersion}</version>
      <executions>
@@ -74,7 +74,7 @@ Usage
 
 +---
    <plugin>
-     <groupId>com.edugility</groupId>
+     <groupId>com.github.eostermueller</groupId>
      <artifactId>jpa-maven-plugin</artifactId>
      <version>${projectVersion}</version>
      <executions>
